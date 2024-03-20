@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    margin: 15px;
+    border-radius: 6px;
+}
+header span{
+    font-size: 33px;
+}
+.container{
+    position: relative;
+    top: 24px;
+}
+#logo-he img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 24px;
+    top: 10px;
+}
+h1{
+    font-size: 42px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin: 15px;
+}
+.shop{
+    display: flex;
+    gap: 15px;
+}
+.left{
+    width:85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.right{
+    width: 30%;
+    position: absolute;
+    right: 0px; 
+    text-align: right;
+}
+.class{
+    height: 240px;
+    min-width: 400px;
+    width: 42%;
+    position: relative;
+    background-color: aquamarine;
+    margin: 0px 0px 0px 10px;
+}
+.class img{
+    position: absolute;
+    height: 240px;
+    right: 0px;
+    top: 0px;
+    object-fit: contain;
+}
+.six{
+    background-color: #72b0da;
+}
+.seven{
+    background-color: #8fc69e;
+}
+.eight{
+    background-color: #fa9e79;
+}
+.class p{
+    margin: 42px;
+    font-size: 24px;
+}
+.class a{
+    text-decoration: none;
+    color: black;
+}
+.dot::before{
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    margin: 6px;
+    position: relative;
+    border-radius: 50%;
+    background-color: black;
+}
+.back{
+    top: 6px;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 24px;
+    left: 6px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.back:active{
+    color: #b88fd9;
+    border-color: #b88fd9;
+}

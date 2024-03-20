@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-image: linear-gradient(#694588,#c6b5d7,#d4c7e0,hsl(276, 17%, 94%));
+    width: 100%;
+    width: 100vw;
+    text-transform: uppercase;
+}
+.top{
+    margin: 20px 0px 30px;
+}
+.top nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+header button{
+    text-transform: uppercase;
+}
+.top nav li{
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+}
+.top nav a{
+    color: rgba(255, 255, 255, 0.887);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 3px;
+}
+.top nav a:hover{
+    color: rgb(253, 228, 255);
+    border-bottom: 2px solid  rgb(253, 228, 255) ;
+}
+.top nav a:active{
+    color: #ffffff;
+}
+.top nav button{
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0px ;
+    border-radius: 15px;
+    padding: 5px;
+}
+.top nav button:hover{
+    color: rgb(253, 228, 255);
+    background-color: #c6b5d7c1;
+}
+#bottom{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    width: 30%;
+}
+#logo-he img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    top: -113px;
+}
+.left h1{font-weight: bold;
+font-family: 'Protest Riot', sans-serif;
+animation: right-l 1.5s ease-out, visibility 1.5s ease-out;
+
+}
+#getstart{
+    padding: 5px;
+    margin :20px 0px;
+    border-radius: 6px;
+    width: 204px;
+    font-size: 19px;
+    font-weight: bold;
+    color:rgba(245, 231, 231, 0.941);
+    background-color: rgba(0, 0, 0, 0.947);
+    animation: visibility 1.5s ease-out;
+}
+@keyframes visibility {
+    from{
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+}  
+}
+#getstart:active{
+    border: 2px solid goldenrod;
+}
+#getstart em{
+    color: goldenrod;
+    font-style: normal;
+}
+.higlight{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.higlight div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #755591eb;
+    animation: down-u 1.5s ease-out ,visibility 1.5s ease-out;
+    animation-duration: calc(var(--i) * 1.5s);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.higlight div sub{
+    font-size: 10px;
+}
+@keyframes down-u {
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+} 
+.right img{
+    height: 420px;
+    border-radius: 60px;
+    object-fit: cover;
+    animation: left-r 1.5s ease-out,visibility 1.5s ease-out;
+}
+@keyframes left-r {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes right-l {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}

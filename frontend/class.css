@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    margin: 15px;
+    border-radius: 6px;
+}
+header span{
+    font-size: 33px;
+}
+#logo-he img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 24px;
+    top: 10px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 15px;
+   
+}
+.top-selec{
+    font-size: 24px;
+    background-color: #dcd1e5;
+    color: black;
+    width: 10%;
+    min-width:96px;
+    border: 3px solid rgb(128 128 128);
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 6px;
+    text-align: center;
+}
+label{
+    height: 100%;
+    width: 100%;
+}
+.top-selec:active{
+    background-color: #b88fd9;
+    color: rgba(0, 0, 0, 0.635);
+    border: 3px solid rgba(124, 135, 65, 0.543);
+}
+input[type=radio]{
+    display: none;
+    position: absolute;
+}
+
+.main{
+    width: 100vw;
+    padding: 15px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.one{
+    display: flex;
+}
+.card{
+    margin: 24px;
+    height: 240px;
+    width: 420px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.img{
+    flex-shrink: 0;
+    height: calc(0.7*240px);
+    width: 100%;
+}
+.img img{
+    padding:2px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+a{ 
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.back{
+    top: 6px;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 24px;
+    left: 6px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.back:active{
+    color: #b88fd9;
+    border-color: #b88fd9;
+}
